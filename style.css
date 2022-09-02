@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    display: block;
+}
+nav ul{
+display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 100px;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: all linear .2s;
+}
+
+
+nav ul li a:hover{
+    font: bold;
+
+}
+
+.car{
+    margin-top: 5px;
+}
+.video{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.servicehead{
+    margin-top: 10px;
+}
+.service{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service1{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+}
+.service2{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.mainfooter{
+    margin-top: 100px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav ul{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .product{
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .service{
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        margin: 0 auto;
+    }
+}
